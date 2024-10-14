@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    font-family: 'Arial';
+    background: azure;
+    color: purple;
+}
+
+#dino {
+    width: 150px;
+}
