@@ -1,10 +1,46 @@
+@keyframes colorchange {
+    0%   {color:red;}
+    25%  {color:orange;}
+    50%  {color:yellow;}
+    75%  {color:green;}
+    100% {color:blue;}
+}
+
 body {
     text-align: center;
     font-family: 'Arial';
-    background: azure;
-    color: purple;
+    background: #5bc0de41;
+    padding-top: 50px;
+}
+
+h1 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    animation-name: colorchange;
+    animation-duration: 4s;
+}
+
+p {
+    /* font-family: "Papyrus", fantasy; */
+    font-family: "Gaegu", cursive;
 }
 
 #dino {
     width: 150px;
+    /* transition: transform 1s ease; */
+}
+
+#dino:hover {
+    transform: rotate(180deg);
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border: 2px solid #04AA6D; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c4ffe9;
 }
